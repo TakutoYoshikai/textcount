@@ -7,7 +7,8 @@ body {
   color: #1E3888;
 }
 .main {
-  width: 500px;
+  width: 80%;
+  max-width: 500px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -15,6 +16,7 @@ body {
 .text {
   width: 100%;
   height: 400px;
+  max-height: 50vh;
   border: 3px solid #1E3888;
   border-radius: 6px;
   background-color: #FCFCFC;
@@ -23,7 +25,7 @@ body {
 #display {
   border: 3px solid #1E3888;
   border-radius: 6px;
-  width: 80px;
+  width: 210px;
   text-align: center;
   color: #1E3888;
   font-weight: bold;

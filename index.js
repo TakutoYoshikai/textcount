@@ -10,7 +10,7 @@ function display(text) {
 }
 function count() {
   let text = getText();
-  if (includeSpace()) {
+  if (!includeSpace()) {
     text = text.replaceAll(" ", "").replaceAll("　", "");
   }
   document.getElementById("copied").innerText = "";
