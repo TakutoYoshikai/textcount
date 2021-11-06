@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>TextCount</title>
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <h2 class="title">Text Count</h2>
+      <textarea class="text" id="text" onkeyup="count()"></textarea>
+      <div class="pretty p-switch p-fill">
+        <input type="checkbox" id="include-spaces" onchange="count()">
+        <div class="state">
+          <label>Include spaces</label>
+        </div>
+      </div>
+      <div id="copied"></div>
+      <div id="display" onclick="copyToClipboard()"></div>
+    </div>
+  </body>
+</html>
