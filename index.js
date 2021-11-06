@@ -9,7 +9,7 @@ function display(text) {
   document.getElementById("display").innerText = text;
 }
 function count() {
-  let text = getText();
+  let text = getText().replaceAll("\n", "");
   if (!includeSpace()) {
     text = text.replaceAll(" ", "").replaceAll("　", "");
   }
